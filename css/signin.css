@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --poppins: "Poppins", sans-serif;
+  --montserrat: "Montserrat", sans-serif;
+  --blue: #068fa1;
+  --light-color: #f0f7fa;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* signin page */
+.container {
+  /* border: 1px solid red; */
+  background: linear-gradient(
+      to bottom,
+      #9da0f1,
+      #b390e0,
+      #b98cdd
+    );
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .signin {
+  /* border: 1px solid white; */
+  height: 80%;
+  width: 70%;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  border: none;
+  box-shadow: 0 0 15px;
+}
+.signin .signin-left {
+  /* border: 1px solid orangered; */
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  font-family: var(--poppins);
+  background-color: white;
+}
+.signin-left .left-card {
+  /* border: 1px solid blue; */
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.left-card .signin-logo {
+  /* border: 1px solid red; */
+  margin-left: -50%;
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.signin-logo .signin-brand {
+  /* border: 1px solid red; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.signin-logo img {
+  height: 80%;
+  transform: rotate(-25deg);
+}
+.left-card .signin-brand {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--blue);
+  padding-left: 15px;
+}
+.left-card .login-card {
+  /* border: 2px solid pink; */
+  margin-top: 6%;
+  margin-bottom: 8%;
+  height: 100%;
+  width: 60%;
+  border-radius: 10px;
+  padding: 10px;
+  /* background-color: white; */
+}
+.login-card .top-log {
+  /* border: 1px solid green; */
+  height: 35%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.top-log .login {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--blue);
+}
+.top-log .google-login {
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  height: 30%;
+  width: auto;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: space-evenly;
+}
+.google-login .fa-brands {
+  color: black;
+  font-size: 1.4rem;
+  transition: 0.6s;
+}
+.google-login .fa-brands:hover {
+  color: var(--blue);
+}
+/* .google-login img {
+  border: 1px solid blue;
+  height: 70%;
+  padding: 0px;
+} */
+/* .google-login .google-text {
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+} */
+.top-log .email-signin {
+  /* border: 1px solid blue; */
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.login-card .bottom-log {
+  /* border: 1px solid green; */
+  height: 65%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.bottom-log form {
+  /* border: 1px solid red; */
+  height: 75%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.bottom-log form input {
+  outline: none;
+  background-color: rgb(235, 231, 231);
+  width: 20em;
+  color: black;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 12px 15px;
+  border: #f5f5f5;
+  border-radius: 10px;
+}
+.bottom-log form .forgot-pass {
+  font-size: 0.8rem;
+}
+.bottom-log form .submit {
+  width: 80%;
+  height: 22%;
+  padding: 10px;
+  background-color: var(--blue);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: 0.8s;
+}
+.bottom-log form .submit:hover {
+  color: var(--blue);
+  background-color: black;
+}
+.signup-here {
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+.signup-here a {
+  text-decoration: none;
+}
+.signin .signin-right {
+  /* border: 1px solid orangered; */
+  height: 100%;
+  width: 50%;
+  background: url(../image/model8.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+/* -------------------media query------------------- */
+/* -----tab media----- */
+@media all and (max-width: 768px) {
+
+
+
+   /* signin page */
+  .container .signin {
+    width: 90%;
+    height: 60%;
+  }
+  .signin .signin-left {
+    width: 50%;
+  }
+  .signin .signin-right {
+    background-position: center;
+  }
+  .left-card .signin-brand {
+    font-size: 2rem;
+  }
+  .left-card .login-card {
+    width: 100%;
+    margin:30%;
+    height: 80%;
+  }
+  .bottom-log form .submit{
+   
+    height: 25%;
+  }
+}
+
+/* mobile media */
+@media all and (max-width: 576px) {
+  /* signin page */
+  .container .signin {
+    width: 80%;
+    height: 60%;
+  }
+  .signin .signin-left {
+    width: 100%;
+    height: 100%;
+  }
+  .left-card .login-card {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+  }
+  .top-log .login {
+    font-size: 1.5rem;
+  }
+  .top-log .google-login {
+    width: 70%;
+  }
+  .bottom-log form input {
+    width: 18em;
+  }
+  .bottom-log form .submit{
+    height: 25%;
+  }
+  .signin .signin-right {
+    display: none;
+  }
+}
