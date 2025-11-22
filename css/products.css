@@ -249,7 +249,7 @@
 }
 .left-banner-content .banner-btn {
   /* border: 2px solid var(--blue); */
-  width: 26.5%;
+  width: 115px;
   text-decoration: none;
   padding: 10px 15px;
   border-radius: 15px;
@@ -298,7 +298,7 @@
 }
 .right-banner-content .banner-btn {
   /* border: 2px solid var(--blue); */
-  width: 26.5%;
+  width: 115px;
   text-decoration: none;
   padding: 10px 15px;
   border-radius: 15px;
@@ -1447,6 +1447,9 @@
   .collection-card .collect-card2 {
     width: 90%;
     height: 100%;
+  }
+  .collection-bottom-card .new{
+    padding: 10px;
   }
   .collection-bottom-card .add-to-cart {
     padding: 8px;

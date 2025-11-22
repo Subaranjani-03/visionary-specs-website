@@ -722,7 +722,9 @@
   .collect-card2 .prod-col-card {
     width: 100%;
   }
-
+   .collection-bottom-card .new {
+    padding: 10px;
+  }
 
   .collection-bottom-card .add-to-cart {
     padding: 8px;
@@ -845,15 +847,16 @@
   }
   .collection-bottom-card .add-to-cart {
     padding: 8px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     width: 60%;
     left: 20%;
   }
   .collection-bottom-card .type {
-    font-size: 1rem;
+    font-size: .9rem;
+
   }
   .collection-bottom-card .rate {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   .collection-bottom-card .rating {
     font-size: 1rem;
