@@ -1722,7 +1722,7 @@ ul li .fa-check {
   gap: 15px;
 }
 .service-items .item-bottom {
-  /* border: 1px solid; */
+  /* border: 1px solid red; */
   height: 50%;
   width: 100%;
   display: flex;
@@ -1750,11 +1750,11 @@ ul li .fa-check {
 
 .item::before {
   content: "";
-  /* border: 1px solid; */
+  border: 2px solid var(--blue);
   height: 100%;
   width: 100%;
   position: absolute;
-  left: -100%;
+  left: 100%;
   top: 0;
   background-color: rgb(0, 181, 166, 0.1);
   transition: 0.6s;
@@ -1763,7 +1763,6 @@ ul li .fa-check {
 .item:hover::before {
   background-color: var(--blue);
   left: 0;
-  border-radius: 15px;
 }
 .item:hover {
   color: white;
